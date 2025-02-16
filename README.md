@@ -18,21 +18,23 @@ This to done to analyse the response of the circuit to time varying signals.Tran
 ### AC Analysis:
 Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
 ## Procedure:
-1.Create a new folder and name it as project file.Save the LT spice file in this folder.
+### **Steps for LTSpice Simulation**  
 
-2.Name the mosfet as CMOSN and the length as 180nm and width as 4um initially.
+1.  Make a new folder named **"Project File"** and save your LTSpice circuit file inside it.  
 
-3.For the pmos name it as CMOSP and set the length as 180nm and width as 4um respectively
+2. Name the NMOS transistor **"CMOSN"** with a **length of 180nm** and **width of 4µm**.  
 
-4.**DC Analysis:** Set up the circuit as per the circuit diagram with proper connections ensuring valid circuit for further analysis.
-Apply the DC voltage of Vdd=1.8V and Vgs = 0.9 V . Go to simulate option in the tab and edit simulation command, click on DC analysis and press ok.(.op)
-Click on Run in the tab menu to get the DC operating point ,Vout and Id.
+3.  Name the PMOS transistor **"CMOSP"** with a **length of 180nm** and **width of 4µm**.  
 
-5.**Transient Analysis:** Apply a sine wave input of Vgs=0.9V with an amplitude of 50mV and frequency of 1kHz by going to advanced menu in the voltage setting option.go to simulate option in tab ,edit simulation command 
-, click on transient analysis and give the stop time as 3m and click ok.(.tran 3m) Now Run to visualise the response of the circuit to a time varying signal.
+4.  Build the circuit as per the given schematic, ensuring all connections are correct.  
+    Apply **Vdd = 1.8V** and **Vgs = 0.9V**.  
+    In LTSpice, go to **Simulate**, select the .op option, and tap OK.  
+    Click **Run** to obtain the DC operating point, output voltage (Vout), and drain current (Id).  
 
-6.**AC Analysis:** Go to spice directive and give the library file path for the simulator to access the data through the path . Go to simulate option in the tab , edit simulation command , click on AC analysis 
-and mention the time of sweep as decade , no of points as 20 and frequency as .1Hz to 1THzand click on ok.Now Run to analyze the gain and frequency response of the circuit.(.ac dec 20 .1 1T)
+5. Apply a **sine wave input** with **Vgs = 0.9V**, an **amplitude of 50mV**, and a **frequency of 1kHz** (set this in the **Advanced Voltage Source Settings**).Go to **Simulate** and click OK.  Click **Run** to observe the circuit’s time-domain response.  
+
+6.  Use a **SPICE directive** to provide the library file path for accessing MOSFET model data. Go to **Simulate**, and define the frequency range from ** 1kz**.  
+    Click **Run** to analyze the gain and frequency response of the circuit.
 # Circuit 1:
 ![Image](https://github.com/sampath1004/LIC-LAB-REPORT/blob/28e0b87a7b73a26290bd9d71876dde2395723597/WhatsApp%20Image%202025-02-16%20at%2022.15.50.jpeg)
 # Calculation :
