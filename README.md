@@ -39,3 +39,28 @@ Evaluates a circuit’s frequency response by determining gain and phase shift a
 ![Image](https://github.com/sampath1004/LIC-LAB-REPORT/blob/28e0b87a7b73a26290bd9d71876dde2395723597/WhatsApp%20Image%202025-02-16%20at%2022.15.50.jpeg)
 # Calculation :
 
+
+
+
+## INFERENCE:
+Biasing is essential to keep the **MOSFET in saturation mode**, allowing it to function as an amplifier. The **DC operating point (Q-point)** determines how the amplifier behaves and must be set correctly to ensure proper signal amplification. If the biasing is incorrect, the MOSFET may enter the **cutoff or triode region**, preventing amplification. A stable Q-point helps maintain consistent performance despite variations in temperature and transistor properties.  
+The **drain current (ID)** depends on the **channel width (W)** and **channel length (L)** of the MOSFET. A **larger W** increases **ID**, improving amplification. Since **L is fixed at 180nm**, adjusting **W** is the only way to achieve the desired current level. A higher **W/L ratio** enhances gain but also increases power consumption and parasitic capacitances, which can affect high-frequency performance.    
+To meet the **power requirement of 50μW**, the **drain current (ID) must be 27.78μA**, as verified through LTSpice simulations. The optimal **W** value was determined through trial and error to balance power efficiency and performance. Choosing the correct **W/L ratio** ensures that the circuit meets its design goals without excessive power dissipation.  
+The amplifier’s **gain (AV)** and **frequency response** depend on MOSFET parameters and external resistances. **AC analysis** in LTSpice helps determine how the gain changes across different frequencies. At high frequencies, **parasitic capacitances** may reduce gain and introduce phase shifts, affecting circuit stability. Proper circuit design ensures a wider bandwidth and consistent performance across the desired frequency range.  
+The **transient analysis** evaluates how the amplifier responds to a **time-varying signal**. A **sine wave input** (50mV, 1kHz) is applied, and the output should be an amplified version of the input. Any distortions may indicate **incorrect biasing, non-linearity, or excessive loading effects**. Observing the transient response helps in refining the design to achieve smooth and accurate signal amplification.  
+
+
+
+# Experiment-2
+## Aim:
+
+
+
+
+### DC Analysis:
+**DC analysis** determines the steady-state operating point of a circuit by calculating node voltages and branch currents with all capacitors treated as open circuits and inductors as short circuits. It helps in finding the biasing conditions of transistors and other active components. This analysis is crucial for ensuring proper circuit operation before performing AC or transient analysis.
+### Transient Analysis:
+This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.  
+### AC Analysis:
+Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
+
