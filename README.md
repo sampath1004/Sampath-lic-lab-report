@@ -23,7 +23,7 @@ I = 50μW / 1.8V
 
 I = 27.7μA
 
-
+![image]
 We determine the *MOSFET width (W) = * in order to obtain the target operating conditions and good current conduction.  
 
 ### Transient Analysis:
