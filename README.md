@@ -24,17 +24,19 @@ I = 50μW / 1.8V
 I = 27.7μA
 
 ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/2a879dd09edc2668188ef5dc52abdfac2ad74c3d/dc%20analysis%20.png)
-We determine the *MOSFET width (W) = * in order to obtain the target operating conditions and good current conduction.  
+We determine the *MOSFET width (W) = 1.12um* in order to obtain the target operating conditions and good current conduction.  
 
 ### Transient Analysis:
 This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.  
-*Stop Time* = 5ms.  
+*Stop Time* = 5ms.
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/transient.png)
 ### AC Analysis:
 Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
 1.*Sweep Type* = Decade.  
 2. *Number of Points per Decade* = 20.  
 3. *Start Frequency* = 0.1 Hz.  
 4. *Stop Frequency* = 1THz
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/ac%20analysis.png)
 ## Procedure:
 ### **Steps for LTSpice Simulation**  
 
@@ -131,20 +133,20 @@ ID = P/VDD
 ID = 50μW / 1.8V
 
 ID = 27.7μA
-
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/dc%20analysis%202.png)
 ### Transient Analysis:
 This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.
 Stop Time: 5m (5 milliseconds)
 
 The transient analysis provides information about the amplifier's time-domain behavior, such as distortion, settling time, and waveform reproduction.
 
-
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/transient%202.png)
 ### AC Analysis:
 Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
  DC Offset: 0.9V  
   Amplitude: 50mV  
   Frequency: 1kHz
-
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/ac%20analysis%202.png)
 ## **Inference**
 An **inverted common-source (CS) amplifier** is a variation of the standard CS configuration where the output is taken from the **source terminal** instead of the drain. This alters the circuit’s behavior significantly. The **voltage gain** is **less than unity** (\(|A_v| < 1\)), making it similar to a **source follower** (common-drain amplifier). This means it does not provide significant voltage amplification but instead serves as a **buffer** with high **input impedance** and low **output impedance**, making it useful for impedance matching. Unlike a standard CS amplifier, this configuration does **not invert the phase** of the input signal. Due to the presence of the source resistor, **negative feedback** is introduced, improving the circuit’s **stability** and **linearity**. Additionally, the inverted CS amplifier offers **better high-frequency response**, making it suitable for high-speed applications. Although it does not amplify voltage significantly, it can provide **current gain**, which can be useful for driving low-impedance loads efficiently.
 
