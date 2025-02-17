@@ -6,17 +6,35 @@ Analysing  DC analysis,Transient analysis and AC analysis of a CS amplifier circ
 ## Components required: 
 Mosfet(nmos4 ,pmos4 ), Resistor(), voltage supply(1.8V,0.9V) and connecting wires.
 ## Theory:
-An (NMOSFET) N-Channel Metal-Oxide-Semiconductor Field-Effect Transistor is a voltage-controlled device where current flows from drain to source when a positive voltage is applied to the gate. It operates in three regions—cutoff, triode, and saturation—making it essential for switching and amplification applications.
+An (NMOSFET) N-Channel Metal-Oxide-Semiconductor Field-Effect Transistor is a voltage-controlled device where current flows from drain to source when a positive voltage is applied to the gate. It operates in three regions cutoff, triode, and saturation making it essential for switching and amplification applications.
 A Common Source (CS) Amplifier is a fundamental MOSFET-based amplifier that provides voltage gain with moderate input and output impedance. It operates by amplifying the input signal applied at the gate, causing an amplified and inverted output at the drain. The gain is determined by the transconductance of the MOSFET and the load resistance. It is widely used in analog circuits due to its high gain and good frequency response.
 The drain current
 
 **I<sub>d</sub> = 1/2 k<sub>n</sub> V<sub>ov</sub><sup>2</sup>** ; **V<sub>ov</sub>=V<sub>gs</sub>-V<sub>th</sub>** and **k<sub>n</sub>=u<sub>n</sub> C<sub>ox</sub> W/L**
 ### DC Analysis:
 **DC analysis** determines the steady-state operating point of a circuit by calculating node voltages and branch currents with all capacitors treated as open circuits and inductors as short circuits. It helps in finding the biasing conditions of transistors and other active components. This analysis is crucial for ensuring proper circuit operation before performing AC or transient analysis.
+The *Drain current (Id)* Can be determined:  
+
+P = V * I
+
+I = P / V
+
+I = 50μW / 1.8V
+
+I = 27.7μA
+
+
+We determine the *MOSFET width (W) = * in order to obtain the target operating conditions and good current conduction.  
+
 ### Transient Analysis:
 This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.  
+*Stop Time* = 5ms.  
 ### AC Analysis:
 Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
+1.*Sweep Type* = Decade.  
+2. *Number of Points per Decade* = 20.  
+3. *Start Frequency* = 0.1 Hz.  
+4. *Stop Frequency* = 1THz
 ## Procedure:
 ### **Steps for LTSpice Simulation**  
 
@@ -38,8 +56,14 @@ Evaluates a circuit’s frequency response by determining gain and phase shift a
 # Circuit 1:
 ![Image](https://github.com/sampath1004/LIC-LAB-REPORT/blob/28e0b87a7b73a26290bd9d71876dde2395723597/WhatsApp%20Image%202025-02-16%20at%2022.15.50.jpeg)
 # Calculation :
+The given specifications for our amplifier are:  
 
-
+1.  *Channel Length (L)* = 180nm.
+2.  *Supply Voltage (Vdd)* = 1.8V.
+3.  *Gate Voltage (Vg)* = 0.9V.
+4.  *Power Budget* = 50μW.
+5.  *Drain Current (Id)* = 27.7μA. 
+6.  *MOSFET Width (W)* = .  
 
 
 ## INFERENCE:
