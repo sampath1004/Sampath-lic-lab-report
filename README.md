@@ -76,15 +76,83 @@ The **transient analysis** evaluates how the amplifier responds to a **time-vary
 
 
 # Experiment-2
-## Aim:
 
+## Inverted CS Amplifier Analysis
 
+### AIM
 
+The objective of this report is to evaluate the inverting behavior of a CS amplifier when it operates on both DC and AC sources. 
+
+### THEORY
+The **inverted common-source (CS) amplifier** is a variation of the standard CS amplifier where the output is taken from the **source terminal** instead of the drain. This configuration introduces **negative feedback**, which reduces the gain but improves stability and linearity. Unlike the regular CS amplifier, the inverted version does **not provide phase inversion** between input and output. The voltage gain is always **less than unity**, making it function similarly to a **source follower** with high input impedance and low output impedance. This makes it ideal for **impedance matching** rather than voltage amplification. Due to the presence of the source resistor, the circuit achieves better **thermal stability** and **frequency response**. Overall, the inverted CS amplifier is useful when buffering signals or driving low-impedance loads.
+
+### **Procedure for Inverted Common-Source (CS) Amplifier**  
+
+1. **Select the MOSFET** – Choose an **N-channel MOSFET** with suitable **\( g_m \)** for the desired gain.  
+
+2. **Circuit Components**  
+   - **Gate Resistor (\( R_G \))** – Stabilizes bias.  
+   - **Source Resistor (\( R_S \))** – Controls gain and adds negative feedback.  
+   - **Drain Resistor (\( R_D \))** – Biasing component.  
+   - **Coupling Capacitors (\( C_{in}, C_{out} \))** – Block DC, pass AC signals.  
+   - **Bypass Capacitor (\( C_S \)) (optional)** – Affects gain and frequency response.  
+
+3. **Biasing the MOSFET**  
+   - Use a **voltage divider** or **self-biasing** with \( R_S \).  
+   - Ensure MOSFET operates in **saturation**:  
+     \[
+     V_{GS} > V_{th}, \quad V_{DS} > (V_{GS} - V_{th})
+     \]  
+
+4. **Determine the Gain**  
+   - Approximate voltage gain:  
+     \[
+     A_v \approx \frac{g_m R_S}{1 + g_m R_S}
+     \]  
+   - Gain is always **< 1** (acts as a buffer).  
+
+5. **Impedance Considerations**  
+   - **High input impedance** (good for signal sources).  
+   - **Low output impedance** (good for driving loads).  
+
+6. **Test the Circuit**  
+   - Apply an **AC input signal** and observe the output.  
+   - Measure **gain, phase shift, and impedance**.  
+   - Adjust \( R_S \) and biasing resistors for optimal performance.
 
 ### DC Analysis:
 **DC analysis** determines the steady-state operating point of a circuit by calculating node voltages and branch currents with all capacitors treated as open circuits and inductors as short circuits. It helps in finding the biasing conditions of transistors and other active components. This analysis is crucial for ensuring proper circuit operation before performing AC or transient analysis.
+**Supply Voltage (VDD)**: 1.8V  
+**Gate Voltage (VG)**: 0.9V  
+**Power Budget (P)**: 50μW  
+
+P = VDD * ID
+
+ID = P/VDD
+
+ID = 50μW / 1.8V
+
+ID = 27.7μA
+
 ### Transient Analysis:
-This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.  
+This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.
+Stop Time: 5m (5 milliseconds)
+
+The transient analysis provides information about the amplifier's time-domain behavior, such as distortion, settling time, and waveform reproduction.
+
+
 ### AC Analysis:
 Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
+ DC Offset: 0.9V  
+  Amplitude: 50mV  
+  Frequency: 1kHz
+
+## **Inference**
+An **inverted common-source (CS) amplifier** is a variation of the standard CS configuration where the output is taken from the **source terminal** instead of the drain. This alters the circuit’s behavior significantly. The **voltage gain** is **less than unity** (\(|A_v| < 1\)), making it similar to a **source follower** (common-drain amplifier). This means it does not provide significant voltage amplification but instead serves as a **buffer** with high **input impedance** and low **output impedance**, making it useful for impedance matching. Unlike a standard CS amplifier, this configuration does **not invert the phase** of the input signal. Due to the presence of the source resistor, **negative feedback** is introduced, improving the circuit’s **stability** and **linearity**. Additionally, the inverted CS amplifier offers **better high-frequency response**, making it suitable for high-speed applications. Although it does not amplify voltage significantly, it can provide **current gain**, which can be useful for driving low-impedance loads efficiently.
+
+
+
+  
+
+
 
