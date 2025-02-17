@@ -99,16 +99,10 @@ The **inverted common-source (CS) amplifier** is a variation of the standard CS 
 
 3. **Biasing the MOSFET**  
    - Use a **voltage divider** or **self-biasing** with \( R_S \).  
-   - Ensure MOSFET operates in **saturation**:  
-     \[
-     V_{GS} > V_{th}, \quad V_{DS} > (V_{GS} - V_{th})
-     \]  
+   
 
 4. **Determine the Gain**  
-   - Approximate voltage gain:  
-     \[
-     A_v \approx \frac{g_m R_S}{1 + g_m R_S}
-     \]  
+
    - Gain is always **< 1** (acts as a buffer).  
 
 5. **Impedance Considerations**  
