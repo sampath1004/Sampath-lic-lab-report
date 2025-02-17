@@ -53,8 +53,6 @@ Evaluates a circuit’s frequency response by determining gain and phase shift a
 
 6.  Use a **SPICE directive** to provide the library file path for accessing MOSFET model data. Go to **Simulate**, and define the frequency range from ** 1kz**.  
     Click **Run** to analyze the gain and frequency response of the circuit.
-# Circuit 1:
-![Image](https://github.com/sampath1004/LIC-LAB-REPORT/blob/28e0b87a7b73a26290bd9d71876dde2395723597/WhatsApp%20Image%202025-02-16%20at%2022.15.50.jpeg)
 # Calculation :
 The given specifications for our amplifier are:  
 
