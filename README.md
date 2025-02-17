@@ -23,7 +23,7 @@ I = 50μW / 1.8V
 
 I = 27.7μA
 
-![image]
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/2a879dd09edc2668188ef5dc52abdfac2ad74c3d/dc%20analysis%20.png)
 We determine the *MOSFET width (W) = * in order to obtain the target operating conditions and good current conduction.  
 
 ### Transient Analysis:
