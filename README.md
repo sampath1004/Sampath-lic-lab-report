@@ -63,7 +63,7 @@ The given specifications for our amplifier are:
 3.  *Gate Voltage (Vg)* = 0.9V.
 4.  *Power Budget* = 50μW.
 5.  *Drain Current (Id)* = 27.7μA. 
-6.  *MOSFET Width (W)* = .  
+6.  *MOSFET Width (W)* = 1.12um.  
 
 
 ## INFERENCE:
