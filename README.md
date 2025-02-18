@@ -29,7 +29,7 @@ I = 27.7μA
 
 ![image](https://github.com/user-attachments/assets/0c2f87d0-d368-4131-b979-2260c2592530)
 
-We determine the *MOSFET width (W) = 1.12um* in order to obtain the target operating conditions and good current conduction.  
+We determine the *MOSFET width (W) = 1.10um* in order to obtain the target operating conditions and good current conduction.  
 
 ### Transient Analysis:
 This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.  
@@ -68,7 +68,7 @@ The given specifications for our amplifier are:
 3.  *Gate Voltage (Vg)* = 0.6V.
 4.  *Power Budget* = 50μW.
 5.  *Drain Current (Id)* = 27.7μA. 
-6.  *MOSFET Width (W)* = 1.12um.  
+6.  *MOSFET Width (W)* = 1.1um.  
 
 
 ## INFERENCE:
