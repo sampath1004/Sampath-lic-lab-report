@@ -6,7 +6,7 @@ Analysing  DC analysis,Transient analysis and AC analysis of a CS amplifier circ
 
 
 ## Components required: 
-Mosfet(nmos4 ,pmos4 ), Resistor(), voltage supply(1.8V,0.9V) and connecting wires.
+Mosfet(nmos4 ,pmos4 ), Resistor(), voltage supply(1.8V,0.6V) and connecting wires.
 ## Theory:
 An (NMOSFET) N-Channel Metal-Oxide-Semiconductor Field-Effect Transistor is a voltage-controlled device where current flows from drain to source when a positive voltage is applied to the gate. It operates in three regions cutoff, triode, and saturation making it essential for switching and amplification applications.
 A Common Source (CS) Amplifier is a fundamental MOSFET-based amplifier that provides voltage gain with moderate input and output impedance. It operates by amplifying the input signal applied at the gate, causing an amplified and inverted output at the drain. The gain is determined by the transconductance of the MOSFET and the load resistance. It is widely used in analog circuits due to its high gain and good frequency response.
