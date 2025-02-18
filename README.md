@@ -127,20 +127,31 @@ ID = P/VDD
 ID = 50μW / 1.8V
 
 ID = 27.7μA
-![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/dc%20analysis%202.png)
+![Screenshot 2025-02-18 153133](https://github.com/user-attachments/assets/e48bcb6b-a554-431f-93ff-36957c54b7b6)
+
+
 ### Transient Analysis:
 This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.
 Stop Time: 5m (5 milliseconds)
 
 The transient analysis provides information about the amplifier's time-domain behavior, such as distortion, settling time, and waveform reproduction.
 
-![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/transient%202.png)
+![WhatsApp Image 2025-02-18 at 16 17 01_6c628c90](https://github.com/user-attachments/assets/a21376b3-a265-46ea-98d3-424c6767b45e)
+
+
 ### AC Analysis:
 Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
  DC Offset: 0.9V  
   Amplitude: 50mV  
   Frequency: 1kHz
-![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/ac%20analysis%202.png)
+![WhatsApp Image 2025-02-18 at 16 15 02_026ef94b](https://github.com/user-attachments/assets/2262f0d7-45fa-40b7-b23c-637a0ad3d00b)
+
+
+### Gain :
+![WhatsApp Image 2025-02-18 at 16 15 02_641f0dc3](https://github.com/user-attachments/assets/37af0274-6941-4ca9-8dfe-479f7d3bb9fb)
+
+
+
 ## **Inference**
 An **inverted common-source (CS) amplifier** is a variation of the standard CS configuration where the output is taken from the **source terminal** instead of the drain. This alters the circuit’s behavior significantly. The **voltage gain** is **less than unity** (\(|A_v| < 1\)), making it similar to a **source follower** (common-drain amplifier). This means it does not provide significant voltage amplification but instead serves as a **buffer** with high **input impedance** and low **output impedance**, making it useful for impedance matching. Unlike a standard CS amplifier, this configuration does **not invert the phase** of the input signal. Due to the presence of the source resistor, **negative feedback** is introduced, improving the circuit’s **stability** and **linearity**. Additionally, the inverted CS amplifier offers **better high-frequency response**, making it suitable for high-speed applications. Although it does not amplify voltage significantly, it can provide **current gain**, which can be useful for driving low-impedance loads efficiently.
 
