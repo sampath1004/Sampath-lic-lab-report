@@ -1,4 +1,6 @@
 # Experiment-1
+
+
 ## Aim:
 Analysing  DC analysis,Transient analysis and AC analysis of a CS amplifier circuit for various parameters  using LT Spice having Specifications: 180 nm, tsmc, VDD = 1.8 V, Power budget = 50 uW
 
@@ -42,16 +44,14 @@ Evaluates a circuit’s frequency response by determining gain and phase shift a
 
 1.  Make a new folder named **"Project File"** and save your LTSpice circuit file inside it.  
 
-2. Name the NMOS transistor **"CMOSN"** with a **length of 180nm** and **width of 4µm**.  
+ 
 
-3.  Name the PMOS transistor **"CMOSP"** with a **length of 180nm** and **width of 4µm**.  
-
-4.  Build the circuit as per the given schematic, ensuring all connections are correct.  
-    Apply **Vdd = 1.8V** and **Vgs = 0.9V**.  
+2.  Build the circuit as per the given schematic, ensuring all connections are correct.  
+    Apply **Vdd = 1.8V** and **Vgs = 0.6V**.  
     In LTSpice, go to **Simulate**, select the .op option, and tap OK.  
     Click **Run** to obtain the DC operating point, output voltage (Vout), and drain current (Id).  
 
-5. Apply a **sine wave input** with **Vgs = 0.9V**, an **amplitude of 50mV**, and a **frequency of 1kHz** (set this in the **Advanced Voltage Source Settings**).Go to **Simulate** and click OK.  Click **Run** to observe the circuit’s time-domain response.  
+5. Apply a **sine wave input** with **Vgs = 0.6V**, an **amplitude of 50mV**, and a **frequency of 1kHz** (set this in the **Advanced Voltage Source Settings**).Go to **Simulate** and click OK.  Click **Run** to observe the circuit’s time-domain response.  
 
 6.  Use a **SPICE directive** to provide the library file path for accessing MOSFET model data. Go to **Simulate**, and define the frequency range from ** 1kz**.  
     Click **Run** to analyze the gain and frequency response of the circuit.
@@ -60,7 +60,7 @@ The given specifications for our amplifier are:
 
 1.  *Channel Length (L)* = 180nm.
 2.  *Supply Voltage (Vdd)* = 1.8V.
-3.  *Gate Voltage (Vg)* = 0.9V.
+3.  *Gate Voltage (Vg)* = 0.6V.
 4.  *Power Budget* = 50μW.
 5.  *Drain Current (Id)* = 27.7μA. 
 6.  *MOSFET Width (W)* = 1.12um.  
@@ -78,6 +78,7 @@ The **transient analysis** evaluates how the amplifier responds to a **time-vary
 # Experiment-2
 
 ## Inverted CS Amplifier Analysis
+![Screenshot 2025-02-18 160849](https://github.com/user-attachments/assets/a1d68fa8-1b9f-4e32-aebf-48e3b6139e2a)
 
 ### AIM
 
