@@ -12,6 +12,8 @@ An (NMOSFET) N-Channel Metal-Oxide-Semiconductor Field-Effect Transistor is a vo
 A Common Source (CS) Amplifier is a fundamental MOSFET-based amplifier that provides voltage gain with moderate input and output impedance. It operates by amplifying the input signal applied at the gate, causing an amplified and inverted output at the drain. The gain is determined by the transconductance of the MOSFET and the load resistance. It is widely used in analog circuits due to its high gain and good frequency response.
 The drain current
 
+![image](https://github.com/user-attachments/assets/ea869251-cb48-4a74-ba47-bb11f8534e6b)
+
 **I<sub>d</sub> = 1/2 k<sub>n</sub> V<sub>ov</sub><sup>2</sup>** ; **V<sub>ov</sub>=V<sub>gs</sub>-V<sub>th</sub>** and **k<sub>n</sub>=u<sub>n</sub> C<sub>ox</sub> W/L**
 ### DC Analysis:
 **DC analysis** determines the steady-state operating point of a circuit by calculating node voltages and branch currents with all capacitors treated as open circuits and inductors as short circuits. It helps in finding the biasing conditions of transistors and other active components. This analysis is crucial for ensuring proper circuit operation before performing AC or transient analysis.
@@ -154,7 +156,7 @@ Evaluates a circuit’s frequency response by determining gain and phase shift a
 
 
 ## **Inference**
-An **inverted common-source (CS) amplifier** is a variation of the standard CS configuration where the output is taken from the **source terminal** instead of the drain. This alters the circuit’s behavior significantly. The **voltage gain** is **less than unity** (\(|A_v| < 1\)), making it similar to a **source follower** (common-drain amplifier). This means it does not provide significant voltage amplification but instead serves as a **buffer** with high **input impedance** and low **output impedance**, making it useful for impedance matching. Unlike a standard CS amplifier, this configuration does **not invert the phase** of the input signal. Due to the presence of the source resistor, **negative feedback** is introduced, improving the circuit’s **stability** and **linearity**. Additionally, the inverted CS amplifier offers **better high-frequency response**, making it suitable for high-speed applications. Although it does not amplify voltage significantly, it can provide **current gain**, which can be useful for driving low-impedance loads efficiently.
+An inverted common-source (CS) amplifier is a variation of the standard CS configuration where the output is taken from the source terminal instead of the drain. This alters the circuit’s behavior significantly. The **voltage gain is **less than unity (\(|A_v| < 1\)), making it similar to a  source follower (common-drain amplifier). This means it does not provide significant voltage amplification but instead serves as a buffer with high input impedance and low **output impedance**, making it useful for impedance matching. Unlike a standard CS amplifier, this configuration does **not invert the phase** of the input signal. Due to the presence of the source resistor, **negative feedback** is introduced, improving the circuit’s **stability** and **linearity**. Additionally, the inverted CS amplifier offers **better high-frequency response**, making it suitable for high-speed applications. Although it does not amplify voltage significantly, it can provide **current gain**, which can be useful for driving low-impedance loads efficiently.
 
 
 
