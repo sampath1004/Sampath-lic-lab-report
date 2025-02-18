@@ -27,20 +27,23 @@ I = 50μW / 1.8V
 
 I = 27.7μA
 
-![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/2a879dd09edc2668188ef5dc52abdfac2ad74c3d/dc%20analysis%20.png)
+![image](https://github.com/user-attachments/assets/0c2f87d0-d368-4131-b979-2260c2592530)
+
 We determine the *MOSFET width (W) = 1.12um* in order to obtain the target operating conditions and good current conduction.  
 
 ### Transient Analysis:
 This to done to analyse the response of the circuit to time varying signals.Transient Analysis:Examines a circuit’s time-domain response by analyzing voltage and current variations over time when subjected to a changing input, useful for studying switching behavior and signal propagation.  
 *Stop Time* = 5ms.
-![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/transient.png)
+![image](https://github.com/user-attachments/assets/ed440cd3-71f3-48ba-851b-a77426f85da9)
+
 ### AC Analysis:
 Evaluates a circuit’s frequency response by determining gain and phase shift across different frequencies, essential for amplifier and filter design.
 1.*Sweep Type* = Decade.  
 2. *Number of Points per Decade* = 20.  
 3. *Start Frequency* = 0.1 Hz.  
 4. *Stop Frequency* = 1THz
-![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/d870607d57fed6526f2a40a313b6ecc098d4e3bf/ac%20analysis.png)
+![image](https://github.com/user-attachments/assets/fc453b86-58d0-4e5e-a3d6-2570b55b8565)
+
 ## Procedure:
 ### **Steps for LTSpice Simulation**  
 
