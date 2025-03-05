@@ -10,7 +10,7 @@ It consist of two transistors M1 and M2, whose sources are joined together.If tw
  This Expereiment is Based on Common Mode Input voltage Differential Amplifier.
 
 
-For all this circuit we need find out the Transient analysis , AC analysis And Frequency Response.
+For all this circuit we need find out the DC Analysis , Transient analysis and AC analysis 
 #### To find the all the values of resistor and source resistor. we need solve the given queston specification.
 
 ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/6bc432b3d43f8f9b080229caa4b3e99a1dae3512/design.jpg)
