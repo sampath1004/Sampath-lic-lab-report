@@ -77,18 +77,18 @@ To do circit analysis first we need to check that the Both the  MOSFET should be
 
  VDS > VGS - Vth
 
-![resistor DC]()
+![resistor DC](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/dc_1.png)
 ### Transient Analysis:
 The transient analysis explain the  circuit response at a particular instant of  time when a time-varying signal is applied at the inputs.In this experiment we 
  can see a complete phase shift of 180 degree output to the input signal.As with respect to context of voltage gain, as the volatge gain is more leads to the 
  smaller the bandwidth size.At the particular time output wave changes with respect input in the amplitude.
 
-![resistor transient]()
+![resistor transient](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/tran_1.png)
 
 Voltage Gain of this circuit is given by= Vout-Vin
 
-Av=1.76-162/1.70-1.60
-=1.4
+Av=1.4718-1.3287/1.3481-1.2504
+=1.4646
 
 Therefore Higher the Higher resistor value reduces gain but increases bandwidth and more the  transient response.
 
@@ -105,11 +105,11 @@ Frequency response is determining quantity of bandwidth and stability of a MOSFE
 In this experiment we can observe that there is no low frequency region because of there is no bypass or coupling capacitor in the circuit.We can observe that mid 
  band region upper value is nearear to the 3dB value which can used as parameter to check bandwidth of amplifier to maintain its gain.
 
-![resistor AC]()
+![resistor AC](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/tran_1.png)
 
 Gain =20*log(Av)
-      =20*log(1.4)
-      =2.922
+      =20*log(1.4646)
+      =3.314
 
 By calculating from graph we can say Therotical nad experiment value of mid band frequency is approximatly equal.
 
