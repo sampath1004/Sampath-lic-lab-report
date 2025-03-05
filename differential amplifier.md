@@ -123,6 +123,10 @@ Same  as the ciruit in the resistor circuit we need to replace resistor by curre
 
 Source terminal is connected to the current source and another terminal is connected to ground.
 
+## Modification
+- Replace the resistor **Rss** with a **current source (1mA)** to improve stability.
+
+  
 ### Procedure:
 
 1.Open the LTspice software, merge the library file for getting accurate values of NMOS.
@@ -155,7 +159,10 @@ Source terminal is connected to the current source and another terminal is conne
  ## Transient Analysis:
 
  The volatge gain of the ciruits inceases because of the current source drop across it is less compared to the Rs resistor drop. So the Voltage gain of circuit is 
- more compared to the circuit 1
+ more compared to the circuit 1.
+ - Apply a **180-degree phase shift** to one MOSFET while keeping the other at **0 degrees**.
+- Assign an **AC amplitude of 1** to one input and **0 to the other** (even -1).
+- Run the simulation and analyze the improved transient response.
 
  ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/182eb699ddb2574914772d537b9c875194a696ae/tran_2.png)
 
@@ -178,8 +185,14 @@ Source terminal is connected to the current source and another terminal is conne
 
 Now we are replacing the current source to the mosfet(M3) where we need to keep current Id3 as our desired value And to keep the mosfet(M1,M2,M3) in saturation 
  region so that voltage gain will be maintained.In this ciruit MMOsfet is connected to drain of it to source terminal and to other ground.
+ 
 
+ ## Modification
+- Replace the current source with a **MOSFET acting as an active current source**.
+- Given parameters: **Vp = 0.5V, Vt = 0.36V**, leading to a **gate voltage of 0.86V**.
+- Adjust **W/L ratio** of the new MOSFET to optimize performance.
 
+  
 ### Procedure:
 
 1.Open the LTspice software, merge the library file for getting accurate values of NMOS.
@@ -214,6 +227,11 @@ VB value (Gate terminal of MOSFET M3)=0.86v
 
  ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/0d0d1e554556b02bcfc6c4fceb4b5722d759ab7a/tran_3.png)
 
+
+- Apply an **AC amplitude of 1** to one MOSFET and **0 to the other**.
+- Run the simulation to observe improved transient response.
+
+  
 Voltage gain(Av) = vout/vin
             =(1.628-1.1751)/(1.350-1.249)
             =4.53V/V
