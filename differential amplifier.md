@@ -248,6 +248,24 @@ Gain(dB)=20*log(Av)
 
   Gain of MOSFET is 13.12dB which same that of waveform obtained.
 
+  # Results
+
+## Circuit-1 
+- DC analysis confirms **MOSFET operation in saturation** with equal drain currents for identical inputs.  
+- Transient response demonstrates **proper differential operation**.  
+- AC analysis reveals **moderate gain and limited common-mode rejection**.  
+
+## Circuit-2 
+- Replacing the resistor with a **current source** improves **bias stability**.  
+- The transient response is **more stable and symmetrical**.  
+- AC analysis shows **higher gain and increased bandwidth** compared to Circuit-1.  
+
+## Circuit-3 
+- DC analysis validates that the **MOSFET-based current source effectively regulates tail current**.  
+- Transient response is **more accurate and stable**.  
+- AC analysis demonstrates **higher gain and improved frequency response**.  
+ 
+
 ## Inference
   From this experiment, we can infer that the differential amplifier plays a crucial role in amplifying the difference between two signals while rejecting common-
  mode noise, making it an essential building block in operational amplifiers. The choice of configuration significantly impacts the circuit’s performance in terms 
