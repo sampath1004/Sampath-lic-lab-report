@@ -41,7 +41,9 @@ Rss=416.66Ω
 
 By this values we are going continue our experiment for getting graphical representation.
 
-## 1.Circuit 1 (Common Source terminal is connected to resistor):
+## 1.Circuit 1 :
+
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/182eb699ddb2574914772d537b9c875194a696ae/circuit_1.png)
   
    In this circuit we have two MOSFET connected to same voltage input forming differential pair. Load Resistor is coonected to  Drain terminal of MOSFET.
    Source terminal is connected resistor and another terminal is connected to ground this is called source degenration resistor.
@@ -69,7 +71,7 @@ Parameters of MOSFET: L=180nm
 6.After that lets take Transient analysis of 5m cycle so in input and output waveforms in 5 complete cycle, so here we get and seperate and combined waveforms of 
  input and output.
 
-7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.2,50m,1T),after that select the AC simulation from the given 
+7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.3,50m,1T),after that select the AC simulation from the given 
  options of simulation after giving values of (Decade,20,01,1T). So we will get a output after placing node to output waveform .
 
 
@@ -77,13 +79,13 @@ To do circit analysis first we need to check that the Both the  MOSFET should be
 
  VDS > VGS - Vth
 
-![resistor DC](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/dc_1.png)
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/dc_1.png)
 ### Transient Analysis:
 The transient analysis explain the  circuit response at a particular instant of  time when a time-varying signal is applied at the inputs.In this experiment we 
  can see a complete phase shift of 180 degree output to the input signal.As with respect to context of voltage gain, as the volatge gain is more leads to the 
  smaller the bandwidth size.At the particular time output wave changes with respect input in the amplitude.
 
-![resistor transient](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/tran_1.png)
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/tran_1.png)
 
 Voltage Gain of this circuit is given by= Vout-Vin
 
@@ -105,7 +107,7 @@ Frequency response is determining quantity of bandwidth and stability of a MOSFE
 In this experiment we can observe that there is no low frequency region because of there is no bypass or coupling capacitor in the circuit.We can observe that mid 
  band region upper value is nearear to the 3dB value which can used as parameter to check bandwidth of amplifier to maintain its gain.
 
-![resistor AC](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/tran_1.png)
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/ac_1.png)
 
 Gain =20*log(Av)
       =20*log(1.4646)
@@ -113,7 +115,9 @@ Gain =20*log(Av)
 
 By calculating from graph we can say Therotical nad experiment value of mid band frequency is approximatly equal.
 
-### 2.Circuit 2 (Common Source terminal is connected to current source):
+### 2.Circuit 2 :
+
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/182eb699ddb2574914772d537b9c875194a696ae/circuit_2.png)
 Same  as the ciruit in the resistor circuit we need to replace resistor by current source . We have two MOSFET connected to same voltage input forming 
  differential pair.And current source is connected to the Drain terminal of MOSFET.
 
@@ -135,16 +139,16 @@ Source terminal is connected to the current source and another terminal is conne
 6.After that lets take Transient analysis of 5m cycle so in input and output waveforms in 5 complete cycle, so here we get and seperate and combined waveforms of 
  input and output.
 
-7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.2,50m,1T),after that select the AC simulation from the given 
+7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.3,50m,1T),after that select the AC simulation from the given 
  options of simulation after giving values of (Decade,20,01,1T). So we will get a output after placing node to output waveform .
 
-![current]()
+
 
 ### DC Analysis:
 
  We need set voltage of Vicm to maintain the desired value of the current and voltage at source point.As a result opertaing point will be given as;
 
- ![DC current]()
+ ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/182eb699ddb2574914772d537b9c875194a696ae/dc_2.png)
  
  In the operating values we got the current flowing through the common source terminal is exactly what we had derived in intial stage of the experiment.
 
@@ -153,20 +157,24 @@ Source terminal is connected to the current source and another terminal is conne
  The volatge gain of the ciruits inceases because of the current source drop across it is less compared to the Rs resistor drop. So the Voltage gain of circuit is 
  more compared to the circuit 1
 
- ![curent transient]()
+ ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/182eb699ddb2574914772d537b9c875194a696ae/tran_2.png)
 
  Voltage gain= vout/vin
-              
-              =(1.83-1.57)/(1.69-1.63)
-
-              =4.333
+              =(1.6287-1.1744)/(1.3982-1.2503)
+              =4.533
 
 ## AC Analysis:
 
-(Still Need to be done because we need to get 13.4dB gain  but actual we are getting around 4dB  in the graph of AC analysis)
+ ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/182eb699ddb2574914772d537b9c875194a696ae/ac_2.png)
+
+  Gain =20*log(Av)
+      =20*log(4.533)
+      =13.12
 
 
-### 3. Circuit 3-(Connecting MOSFET to source terminal)
+### 3. Circuit 3 ;
+
+  ![image]()
 
 Now we are replacing the current source to the mosfet(M3) where we need to keep current Id3 as our desired value And to keep the mosfet(M1,M2,M3) in saturation 
  region so that voltage gain will be maintained.In this ciruit MMOsfet is connected to drain of it to source terminal and to other ground.
@@ -188,14 +196,14 @@ Now we are replacing the current source to the mosfet(M3) where we need to keep 
 6.After that lets take Transient analysis of 5m cycle so in input and output waveforms in 5 complete cycle, so here we get and seperate and combined waveforms of 
  input and output.
 
-7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.2,50m,1T),after that select the AC simulation from the given 
+7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.3,50m,1T),after that select the AC simulation from the given 
  options of simulation after giving values of (Decade,20,01,1T). So we will get a output after placing node to output waveform .   
   
   
-  ![Mosfet]()
+  
 
 ### DC Analysis:
-![DC mosfet]()
+![image]()
 
 By identifying the value of VB of MOSFET M3 we need check the current flow through the MOSFET and It should be in saturation region.
 
@@ -204,23 +212,23 @@ VB value (Gate terminal of MOSFET M3)=0.86v
 
 ### Transient Anlysis:
 
-![transient mos]()
+ ![image]()
 
 Voltage gain(Av) = vout/vin
             =(1.70-1.60)/(1.72-1.685)
-            =2.857
- Voltage gain of MOSFET is 2.857
+            =
+ Voltage gain of MOSFET is 
 
 
 ### AC Analysis:
 
-![Mosfet AC]()
+ ![image]()
 
 Gain(dB)=20*log(Av)
-        =20*log(2.857)
-        =9.11
+        =20*log()
+        =
 
-  Gain of MOSFET is 9.11 which same that of waveform obtained.
+  Gain of MOSFET is x which same that of waveform obtained.
 
 ## Inference
   From this experiment, we can infer that the differential amplifier plays a crucial role in amplifying the difference between two signals while rejecting common-
