@@ -5,18 +5,15 @@ A Differential amplifier is an electronic circuit that amplifies the voltage dif
  instrumentation, audio processing, and sensor interfacing, where precise and stable signal amplification is required.
 It consist of two transistors M1 and M2, whose sources are joined together.If two transistor are connected to the different voltage input then there current 
  across M1 and M2 are different due to gate voltage.If in case the voltage supply at gate terminal is same then the current through the M1 and M2 are same 
- (Im1=Im2).This configuration is called "Common Mode input voltage differential Amplifier".Whatever may be the load resistor, the MOSFET M1 and M2 should not go 
+ (Im1=Im2).This configuration is called Common Mode input voltage differential Amplifier.Whatever may be the load resistor, the MOSFET M1 and M2 should not go 
  to the Triode region. It should be verified that MOSFET should be in Saturation Region.
- This Expereiment is Based on Common Mode Input voltage Differential Amplifier..Where common source terminal is connected with
+ This Expereiment is Based on Common Mode Input voltage Differential Amplifier.
 
-1.Resistor 
-
-2.Source resister
-
-3.MOSFET 
 
 For all this circuit we need find out the Transient analysis , AC analysis And Frequency Response.
 #### To find the all the values of resistor and source resistor. we need solve the given queston specification.
+
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/6bc432b3d43f8f9b080229caa4b3e99a1dae3512/design.jpg)
 
 P=3mW
 
@@ -79,6 +76,9 @@ To do circit analysis first we need to check that the Both the  MOSFET should be
 
  VDS > VGS - Vth
 
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/5fe98385152151eda2c01d43d34b01c018215a03/Screenshot%202025-03-06%20013716.png)
+ 
+### DC Analysis
 ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/afa78f3516a045c22305dce501e3049c2ba240ba/dc_1.png)
 ### Transient Analysis:
 The transient analysis explain the  circuit response at a particular instant of  time when a time-varying signal is applied at the inputs.In this experiment we 
@@ -89,8 +89,8 @@ The transient analysis explain the  circuit response at a particular instant of 
 
 Voltage Gain of this circuit is given by= Vout-Vin
 
-Av=1.4718-1.3287/1.3481-1.2504
-=1.4646
+Av=(1.4718-1.3287/1.3481-1.2504)V/V
+=1.4646V/V
 
 Therefore Higher the Higher resistor value reduces gain but increases bandwidth and more the  transient response.
 
@@ -111,7 +111,7 @@ In this experiment we can observe that there is no low frequency region because 
 
 Gain =20*log(Av)
       =20*log(1.4646)
-      =3.314
+      =3.314dB
 
 By calculating from graph we can say Therotical nad experiment value of mid band frequency is approximatly equal.
 
@@ -161,7 +161,7 @@ Source terminal is connected to the current source and another terminal is conne
 
  Voltage gain= vout/vin
               =(1.6287-1.1744)/(1.3982-1.2503)
-              =4.533
+              =4.533V/V
 
 ## AC Analysis:
 
@@ -169,12 +169,12 @@ Source terminal is connected to the current source and another terminal is conne
 
   Gain =20*log(Av)
       =20*log(4.533)
-      =13.12
+      =13.12dB
 
 
 ### 3. Circuit 3 ;
 
-  ![image]()
+  ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/0d0d1e554556b02bcfc6c4fceb4b5722d759ab7a/circuit_3.png)
 
 Now we are replacing the current source to the mosfet(M3) where we need to keep current Id3 as our desired value And to keep the mosfet(M1,M2,M3) in saturation 
  region so that voltage gain will be maintained.In this ciruit MMOsfet is connected to drain of it to source terminal and to other ground.
@@ -199,11 +199,11 @@ Now we are replacing the current source to the mosfet(M3) where we need to keep 
 7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.3,50m,1T),after that select the AC simulation from the given 
  options of simulation after giving values of (Decade,20,01,1T). So we will get a output after placing node to output waveform .   
   
-  
+ ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/0d0d1e554556b02bcfc6c4fceb4b5722d759ab7a/mos.png) 
   
 
 ### DC Analysis:
-![image]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/0d0d1e554556b02bcfc6c4fceb4b5722d759ab7a/dc_3.png)
 
 By identifying the value of VB of MOSFET M3 we need check the current flow through the MOSFET and It should be in saturation region.
 
@@ -212,23 +212,23 @@ VB value (Gate terminal of MOSFET M3)=0.86v
 
 ### Transient Anlysis:
 
- ![image]()
+ ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/0d0d1e554556b02bcfc6c4fceb4b5722d759ab7a/tran_3.png)
 
 Voltage gain(Av) = vout/vin
-            =(1.70-1.60)/(1.72-1.685)
-            =
- Voltage gain of MOSFET is 
+            =(1.628-1.1751)/(1.350-1.249)
+            =4.53V/V
+ Voltage gain of MOSFET is 4.53V/V
 
 
 ### AC Analysis:
 
- ![image]()
+ ![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/0d0d1e554556b02bcfc6c4fceb4b5722d759ab7a/ac_3.png)
 
 Gain(dB)=20*log(Av)
-        =20*log()
-        =
+        =20*log(4.53)
+        =13.12dB
 
-  Gain of MOSFET is x which same that of waveform obtained.
+  Gain of MOSFET is 13.12dB which same that of waveform obtained.
 
 ## Inference
   From this experiment, we can infer that the differential amplifier plays a crucial role in amplifying the difference between two signals while rejecting common-
