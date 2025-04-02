@@ -6,7 +6,8 @@ A current mirror circuit is an essential analog building block used to replicate
 
 Here is a circuit of basic current mirror:
 
-![)
+![image](https://github.com/user-attachments/assets/9739506d-8687-4e65-886a-e1cb70acde4f)
+
 ## Design question
 
 Part A
@@ -247,3 +248,106 @@ Higher Power Dissipation: Since the output current is doubled, power consumption
 | Output Resistance          | Moderate                 | Slightly Lower           |
 | Accuracy                   | Higher (if matched well) | Can suffer mismatch      |
 | Power Consumption          | Lower                    | Higher (due to doubled output current) |
+
+
+# PART-B
+## Aim
+Design the differential amplifier using the same design specification as Experiment-3.
+Perform DC analysis,trasient and AC analysis.
+
+### DC Analysis:
+
+![a2]()
+
+Here’s a well-structured explanation of the **DC Analysis** for your circuit while ensuring that all MOSFETs operate in the **saturation region** and match the experimental results.
+
+---
+
+## **DC Analysis of the Given Circuit**
+
+### **1. Overview of the Circuit**
+The circuit consists of six MOSFETs (M1 to M6) with different **(W/L) ratios**, and we need to ensure that all transistors remain in the **saturation region** during the analysis. The given (W/L) ratios for each transistor are:
+
+- **M1**: 108μm / 180nm  
+- **M2**: 108μm / 180nm  
+- **M3**: 108μm / 180nm  
+- **M4**: 49.1μm / 180nm  
+- **M5**: 57.33μm / 180nm  
+- **M6**: 57.33μm / 180nm  
+
+Since the circuit must maintain the same **current and voltage values** as in Experiment 3, the **DC operating point (biasing conditions)** is determined accordingly.
+
+---
+
+
+### **2. DC Analysis - Ensuring Same Current & Voltage Values**
+DC analysis involves finding the **DC operating points (voltages and currents)** of each MOSFET. Based on Experiment 3, we ensure the following:
+
+- **Current Matching:** The drain current (\( I_D \)) of matched transistors (M1, M2, M3) must be the same.
+- **Voltage Consistency:** The node voltages should match experimental results.
+
+Since **M1, M2, and M3** have the **same W/L ratio**, they will have identical drain currents, ensuring symmetry.
+
+For **M4, M5, and M6**, their **(W/L) ratios differ**, but they must still be biased properly to maintain the same experimental **current and voltage values**.
+
+---
+
+### **3. Steps to Verify the DC Analysis**
+1. **Compute \( V_{GS} \) for each transistor**  
+   - Ensure each MOSFET is in **saturation** by checking \( V_{GS} \) and \( V_{th} \).
+   
+2. **Find the DC operating point (voltages and currents)**  
+   - Solve Kirchhoff’s Current Law (KCL) and Kirchhoff’s Voltage Law (KVL) equations.
+   
+3. **Check consistency with Experiment 3 results**  
+   - Verify that **simulated values** match **measured values** in the lab.
+
+
+**Output:**
+
+![a1]()
+
+### Transient Analysis:
+
+![a4]()
+
+
+**Output Waveform:**
+
+![a3]()
+
+The Expected gain of the circuit is -8.6V/V.But the obtained gain from the transient analysis is -13.68V/V.
+
+### AC Analysis:
+
+![a6]()
+
+#### Steps to get Ac analysis Waveform:
+- In simulation tab select AC Analysis.
+- In the AC Analysis tab, select **Type of Sweep as Decade**.
+- Enter the number of points per decade (ex:20) and the frequency range ( 0.1Hz to 1THz).
+
+**Output Waveform:**
+
+The Expected gain in db of the circuit is 22.72db.But the obtained gain from the AC analysis(frequency response) is 24.6db.
+
+|Parameter      |Theory value  | Practical value |
+|---------------|--------------|-----------------|
+|Av(in dB)      | 21.34dB      | 24.6dB          |
+|Av(in V/V)     | 8.6          | 13.68            |
+
+![a5]()
+
+**3db Bandwidth:**
+
+The obatined 3db B.W=406.16MHz.
+
+![a7]()
+
+### Inference:
+
+The higher-than-expected gain suggests the circuit might have additional gain contributions from parasitic effects or device mismatches.
+
+The high bandwidth (406.16 MHz) confirms that the amplifier can operate in high-frequency applications.
+
+The gain deviation could also be due to underestimation of drain resistance or transconductance variations.
