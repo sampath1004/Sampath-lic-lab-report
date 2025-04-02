@@ -63,17 +63,17 @@ First we are gonna set the width value of the mos for 180nm length.
 
 By using the spice directive option we found out the value of the width for the calculated current. i.e 6.6643357u
 
-![SettheWvaluefor180nm_current mirror](https://github.com/user-attachments/assets/3fb0f406-835a-4181-b8fb-d53dc22b6a0d)
+![SettheWvaluefor180nm_current mirror]()
 
 We took the current value 277.51uA very close to the calculated value.
 
 ## DC analysis
 
-![DCanalysiscurrentmirror180nm](https://github.com/user-attachments/assets/e0baf68b-8b31-4918-8969-39ee40500ec7)
+![DCanalysiscurrentmirror180nm]()
 
 For better understanding 
 
-![BetterDCanalysis180nm](https://github.com/user-attachments/assets/1cec604a-170a-4f30-a8e5-6bc85b3bfc36)
+![BetterDCanalysis180nm]()
 
 Here one thing to notice is that the gm is changing for M3. Here are the reasons;
 1. M1 and M2 are PMOS (cmosp), while M3 is NMOS (cmosn).
@@ -92,7 +92,7 @@ For M3, Vov ≈ 0.26 V, gm ≈ 0.73 mS
 
 ## Transient Analysis
 
-![Transientanalysis_180nm](https://github.com/user-attachments/assets/d581566f-d112-434d-b7a8-9f913b1293d0)
+![Transientanalysis_180nm]()
 
 calculated Gain = -13.3V/V
 
@@ -100,7 +100,7 @@ Calculated Gain in db = 22.47
 
 ## AC Analysis
 
-![AC analysis180nm](https://github.com/user-attachments/assets/f75e31b8-a0c3-47d5-b7ef-6e53560b4cbe)
+![AC analysis180nm]()
 
 Calculated Gain in db = 22.47
 
@@ -114,25 +114,25 @@ Bandwidth = 1.823 GHz
 
 Before getting to the analysis part we shall calculate the width by using the same method as the previous one.
 
-![Wfor500nm](https://github.com/user-attachments/assets/49fcbbe8-6db7-4bba-b670-aae81244cc16)
+![Wfor500nm]()
 
 ## DC Analysis
 
-![DCfor500nm](https://github.com/user-attachments/assets/0ceb2f0c-6db6-4ca7-a919-15ca49e16347)
+![DCfor500nm]()
 
 For better understanding
 
-![BetterDCfor500nm](https://github.com/user-attachments/assets/5b4d385e-d698-4f11-83c7-a4eae2d7abc3)
+![BetterDCfor500nm]()
 
 ## Transient Analysis
 
-![Transientanalysis500nm](https://github.com/user-attachments/assets/b683b949-09c8-435c-883d-7f15ffdaacd1)
+![Transientanalysis500nm]()
 
 Calculated gain = -15.268 V/V
 
 ## AC Analysis
 
-![ACfor500nm](https://github.com/user-attachments/assets/cece5e7c-5662-4d67-915a-cf04018374c6)
+![ACfor500nm]()
 
 Gain in db = 34.5
 
@@ -146,27 +146,27 @@ We can notice the increase in the gain when we increase the length to 500nm. Thi
 
 Setting the Width value(W)
 
-![Wfor1u](https://github.com/user-attachments/assets/13c789b1-a84d-4906-9706-c6c7b4c2da03)
+![Wfor1u]()
 
 W = 27.902773u
 
 ## DC Analysis
 
-![DCfor1u](https://github.com/user-attachments/assets/63cdf89e-2d1e-479b-acc0-5a43c3150729)
+![DCfor1u]()
 
 For better understanding
 
-![BetterDCanalysis1u](https://github.com/user-attachments/assets/876ba915-8268-4f4c-9185-eba3e71f91d7)
+![BetterDCanalysis1u]()
 
 ## Transient Analysis
 
-![Transientanalysis1u](https://github.com/user-attachments/assets/545e2f9d-a439-4198-b0fa-7c806ba614de)
+![Transientanalysis1u]()
 
 Gain = 15.854 V/V
 
 ## AC Analysis
 
-![ACfor1u](https://github.com/user-attachments/assets/d871a77f-6db6-4d66-8240-ac131fbd5370)
+![ACfor1u]()
 
 Gain in db = 37.02
 
@@ -198,27 +198,27 @@ I am checking for L = 500nm.
 
 First setting the Width for M1 for 185uA. 
 
-![Wfor1isto2](https://github.com/user-attachments/assets/63d0210b-a9c0-4002-82b6-db3aee3bb213)
+![Wfor1isto2]()
 
 Then mutiplying the W value manually we got 22.150 um. For this value we got the value of current to be 369.39uA. So by incrementing the width value by 0.04 um we got the following results.
 
 ## DC Analysis
 
-![DCfor1isto2](https://github.com/user-attachments/assets/cd1a33ef-7922-4e4d-a33c-2e617c851217)
+![DCfor1isto2]()
 
 For better understanding.
 
-![BetterDCfor1isto2](https://github.com/user-attachments/assets/12e8ec1f-7f56-4fd4-a5fa-9d723b2a0acc)
+![BetterDCfor1isto2]()
 
 ## Transient Analysis
 
-![TransientAnalysisfor1isto2](https://github.com/user-attachments/assets/3e0a5d8e-ee18-467f-8839-364c41da8c96)
+![TransientAnalysisfor1isto2]()
 
 Gain = -15.002 V/V
 
 ## AC Analysis
 
-![ACfor1isto2](https://github.com/user-attachments/assets/c08eb7b3-1146-4f88-a2bd-6d35919bb7c4)
+![ACfor1isto2]()
 
 Gain in db = 34.53
 -3db gain = 31.53
