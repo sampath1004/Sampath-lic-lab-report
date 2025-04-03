@@ -64,17 +64,17 @@ First we are gonna set the width value of the mos for 180nm length.
 
 By using the spice directive option we found out the value of the width for the calculated current. i.e 6.6643357u
 
-![SettheWvaluefor180nm_current mirror]()
+![]()
 
 We took the current value 277.51uA very close to the calculated value.
 
 ## DC analysis
 
-![DCanalysiscurrentmirror180nm]()
+![]()
 
 For better understanding 
 
-![BetterDCanalysis180nm]()
+![]()
 
 Here one thing to notice is that the gm is changing for M3. Here are the reasons;
 1. M1 and M2 are PMOS (cmosp), while M3 is NMOS (cmosn).
@@ -93,7 +93,7 @@ For M3, Vov ≈ 0.26 V, gm ≈ 0.73 mS
 
 ## Transient Analysis
 
-![Transientanalysis_180nm]()
+![]()
 
 calculated Gain = -13.3V/V
 
@@ -101,7 +101,7 @@ Calculated Gain in db = 22.47
 
 ## AC Analysis
 
-![AC analysis180nm]()
+![]()
 
 Calculated Gain in db = 22.47
 
@@ -115,25 +115,25 @@ Bandwidth = 1.823 GHz
 
 Before getting to the analysis part we shall calculate the width by using the same method as the previous one.
 
-![Wfor500nm]()
+![]()
 
 ## DC Analysis
 
-![DCfor500nm]()
+![]()
 
 For better understanding
 
-![BetterDCfor500nm]()
+![]()
 
 ## Transient Analysis
 
-![Transientanalysis500nm]()
+![]()
 
 Calculated gain = -15.268 V/V
 
 ## AC Analysis
 
-![ACfor500nm]()
+![]()
 
 Gain in db = 34.5
 
@@ -147,27 +147,27 @@ We can notice the increase in the gain when we increase the length to 500nm. Thi
 
 Setting the Width value(W)
 
-![Wfor1u]()
+![]()
 
 W = 27.902773u
 
 ## DC Analysis
 
-![DCfor1u]()
+![]()
 
 For better understanding
 
-![BetterDCanalysis1u]()
+![]()
 
 ## Transient Analysis
 
-![Transientanalysis1u]()
+![]()
 
 Gain = 15.854 V/V
 
 ## AC Analysis
 
-![ACfor1u]()
+![]()
 
 Gain in db = 37.02
 
@@ -196,27 +196,26 @@ I am checking for L = 500nm.
 
 First setting the Width for M1 for 185uA. 
 
-![Wfor1isto2]()
 
 Then mutiplying the W value manually we got 22.150 um. For this value we got the value of current to be 369.39uA. So by incrementing the width value by 0.04 um we got the following results.
 
 ## DC Analysis
 
-![DCfor1isto2]()
+
 
 For better understanding.
 
-![BetterDCfor1isto2]()
+
 
 ## Transient Analysis
 
-![TransientAnalysisfor1isto2]()
+
 
 Gain = -15.002 V/V
 
 ## AC Analysis
 
-![ACfor1isto2]()
+
 
 Gain in db = 34.53
 -3db gain = 31.53
