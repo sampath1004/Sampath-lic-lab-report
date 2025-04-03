@@ -315,7 +315,4 @@ For **M4, M5, and M6**, their **(W/L) ratios differ**, but they must still be bi
 ### Inference:
 
 The higher-than-expected gain suggests the circuit might have additional gain contributions from parasitic effects or device mismatches.
-
-The high bandwidth (406.16 MHz) confirms that the amplifier can operate in high-frequency applications.
-
 The gain deviation could also be due to underestimation of drain resistance or transconductance variations.
