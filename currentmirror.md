@@ -64,17 +64,15 @@ First we are gonna set the width value of the mos for 180nm length.
 
 By using the spice directive option we found out the value of the width for the calculated current. i.e 6.6643357u
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20095536.png)
 
 We took the current value 277.51uA very close to the calculated value.
 
 ## DC analysis
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20052612.png)
 
 For better understanding 
-
-![]()
 
 Here one thing to notice is that the gm is changing for M3. Here are the reasons;
 1. M1 and M2 are PMOS (cmosp), while M3 is NMOS (cmosn).
@@ -93,7 +91,7 @@ For M3, Vov ≈ 0.26 V, gm ≈ 0.73 mS
 
 ## Transient Analysis
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20051425.png)
 
 calculated Gain = -13.3V/V
 
@@ -101,7 +99,7 @@ Calculated Gain in db = 22.47
 
 ## AC Analysis
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20051526.png)
 
 Calculated Gain in db = 22.47
 
@@ -113,27 +111,19 @@ Bandwidth = 1.823 GHz
 
 ## For L = 500nm
 
-Before getting to the analysis part we shall calculate the width by using the same method as the previous one.
-
-![]()
-
 ## DC Analysis
 
-![]()
-
-For better understanding
-
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20052252.png)
 
 ## Transient Analysis
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20052355.png)
 
 Calculated gain = -15.268 V/V
 
 ## AC Analysis
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20052427.png)
 
 Gain in db = 34.5
 
@@ -147,27 +137,21 @@ We can notice the increase in the gain when we increase the length to 500nm. Thi
 
 Setting the Width value(W)
 
-![]()
-
 W = 27.902773u
 
 ## DC Analysis
 
-![]()
-
-For better understanding
-
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20052612.png)
 
 ## Transient Analysis
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20052633.png)
 
 Gain = 15.854 V/V
 
 ## AC Analysis
 
-![]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20052738.png)
 
 Gain in db = 37.02
 
@@ -201,20 +185,16 @@ Then mutiplying the W value manually we got 22.150 um. For this value we got the
 
 ## DC Analysis
 
-
-
-For better understanding.
-
-
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20061351.png)
 
 ## Transient Analysis
 
-
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20065349.png)
 
 Gain = -15.002 V/V
 
 ## AC Analysis
-
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20065414.png)
 
 
 Gain in db = 34.53
@@ -253,7 +233,7 @@ Perform DC analysis,trasient and AC analysis.
 
 ### DC Analysis:
 
-![image]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20063359.png)
 
 
 ## **DC Analysis of the Given Circuit**
@@ -293,15 +273,15 @@ For **M4, M5, and M6**, their **(W/L) ratios differ**, but they must still be bi
 
 **Output:**
 
-![image]()
+
 
 ### Transient Analysis:
 
-![image]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20095415.png)
 
 ### AC Analysis:
 
-![image]()
+![image](https://github.com/sampath1004/Sampath-lic-lab-report/blob/f3033e0f88a369c6068e575911c527411adbc103/Screenshot%202025-04-03%20095442.png)
 
 #### Steps to get Ac analysis Waveform:
 - In simulation tab select AC Analysis.
